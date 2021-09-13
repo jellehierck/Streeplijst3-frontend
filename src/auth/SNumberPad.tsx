@@ -85,10 +85,9 @@ function SNumberPad({}) {
         <div>
             <Row className="numpad-row">
                 <InputGroup className="mb-3">
-                    <FormControl
-                        value={sNumber.prefix + sNumber.sNumber}
-                        aria-label="Student number input"
-                        aria-describedby="s-number-input"
+                    <FormControl value={sNumber.prefix + sNumber.sNumber}
+                                 aria-label="Student number input"
+                                 aria-describedby="s-number-input"
                     />
                     <Button variant="success"
                             className="btn-sq-md">
@@ -97,7 +96,7 @@ function SNumberPad({}) {
                 </InputGroup>
             </Row>
             <Row className="numpad-row">
-                <ButtonGroup className='btn-group-no-padding'  aria-label="Basic example">
+                <ButtonGroup className="btn-group-no-padding" aria-label="Basic example">
                     <Button variant="secondary"
                             className="btn-sq-md"
                             onClick={() => sNumberDispatch({type: 'add', nr: 1})}>
@@ -116,7 +115,7 @@ function SNumberPad({}) {
                 </ButtonGroup>
             </Row>
             <Row className="numpad-row">
-                <ButtonGroup className='btn-group-no-padding' aria-label="Basic example">
+                <ButtonGroup className="btn-group-no-padding" aria-label="Basic example">
                     <Button variant="secondary"
                             className="btn-sq-md"
                             onClick={() => sNumberDispatch({type: 'add', nr: 4})}>
@@ -135,7 +134,7 @@ function SNumberPad({}) {
                 </ButtonGroup>
             </Row>
             <Row className="numpad-row">
-                <ButtonGroup className='btn-group-no-padding'  aria-label="Basic example">
+                <ButtonGroup className="btn-group-no-padding" aria-label="Basic example">
                     <Button variant="secondary"
                             className="btn-sq-md"
                             onClick={() => sNumberDispatch({type: 'add', nr: 7})}>
@@ -154,7 +153,7 @@ function SNumberPad({}) {
                 </ButtonGroup>
             </Row>
             <Row className="numpad-row">
-                <ButtonGroup className='btn-group-no-padding'  aria-label="Basic example">
+                <ButtonGroup className="btn-group-no-padding" aria-label="Basic example">
                     <Button variant="secondary"
                             className="btn-sq-md"
                             onClick={() => sNumberDispatch({type: 'togglePrefix'})}>

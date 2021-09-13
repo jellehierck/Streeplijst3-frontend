@@ -3,7 +3,7 @@
 }
 
 .numpad-row {
-    width: calc(3*var(--numpad-btn-size));
+    width: calc(3 * var(--numpad-btn-size));
     height: var(--numpad-btn-size);
 }
 
@@ -11,8 +11,8 @@
 
 }
 
-.btn-group-no-padding > *{
-        padding: 0;
+.btn-group-no-padding > * {
+    padding: 0;
 }
 
 .btn-sq-xl {
