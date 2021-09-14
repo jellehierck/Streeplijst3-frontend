@@ -1,8 +1,6 @@
 import React, {useReducer} from "react";
-import PropTypes from "prop-types";
 
 import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -49,7 +47,7 @@ type SNumberAction =
     | { type: 'togglePrefix' };
 
 // React component
-function SNumberPad({}) {
+function SNumberPad() {
 
     function sNumberReducer(currState: SNumberState,
         action: SNumberAction): SNumberState {
@@ -174,10 +172,6 @@ function SNumberPad({}) {
         </div>
     );
 }
-
-SNumberPad.propTypes = {};
-
-SNumberPad.defaultProps = {};
 
 
 // Exports
